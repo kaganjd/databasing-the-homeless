@@ -8,6 +8,8 @@ In disrupting the data field this way, the idea is to show how databases constra
 #(re)sources
 [The Value of Homelessness](https://www.upress.umn.edu/book-division/books/the-value-of-homelessness) by Craig Willse
 
+[HMIS training manual](http://www.sbcounty.gov/capsbc/docs/HMIS/CAPSBC%20HMIS%20Manual%204%203%203V1%201.pdf)
+
 [“Andres Serrano teaches us how not to help the homeless”](http://hyperallergic.com/101311/andres-serrano-shows-us-how-not-to-help-the-homeless/) by Jillian Steinhauer
 
 [Signs for the Homeless](http://homelesssigns.tumblr.com/)
