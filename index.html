@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HMIS</title>
+<meta charset="UTF-8">
+<!-- <script src="homeless.js" type="text/javascript"></script> -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<div id="sidebar">
+	<ul>
+		<li><a href="assets/manual1.png">Quick Intake</a></li>
+		<li><a href="assets/manual6.png">Client Intake</a></li>
+		<li><a href="assets/manual5.png">Household-Demographics</a></li>
+		<li><a href="assets/manual7.png">Employment-Education</a></li>
+		<li><a href="assets/manual3.png">Documents</a></li>
+		<li><a href="assets/manual4.png">Client Listing</a></li>
+	</ul>
+</div>
+
+
+	<div id="middleCol">
+		<div>
+			<form id="basic">
+			First name: <input type="text" name="firstname"><br>
+			Last name: <input type="text" name="lastname"><br>
+			DOB: <input type="text" name="DOB"><br>
+			Relation: <input type="text" name="relation"><br>
+			Disabled: <input type="text" name="disabled"><br>
+			Phone: <input type="text" name="phone">
+			</form>
+		</div>
+	
+		<div>
+			<form id="race">
+			<h2>Race (Choose As Many As Apply)</h2>
+			<input type="checkbox" name="race" value="White">White<br>
+			<input type="checkbox" name="race" value="Asian">Asian<br>
+			<input type="checkbox" name="race" value="Black/African-American">Black/African-American<br>
+			<input type="checkbox" name="race" value="Native Hawaiian/Pacific Islander">Native Hawaiian/Pacific Islander<br>
+			<input type="checkbox" name="race" value="US Indian/Alaska Native">	US Indian/Alaska Native<br>
+			</form>
+		</div>
+	
+		<div>
+			Question : <input type="text" name="question"><br>
+			Answer: <input type="text" name="answer"><br>
+		</div>
+		<!-- 
+		<form>
+		<select>
+			<option value="mother">Mother</option>
+			<option value="father">Father</option>
+			<option value="daughter">Daughter</option>
+			<option value="sib">Sibling</option>
+			<option value="neighbor">Neighbor</option>
+			<option value="storyteller">Storyteller</option>
+		</select>
+		</form> -->
+	</div>
+	<div id="lastCol">
+		<div>
+			<h2>Income</h2>
+			Source: <input type="text" name="source"><br>
+			Amount: <input type="text" name="amount"><br>
+			Interval: <input type="text" name="income_interval"><br>
+			Doc: <input type="text" name="income_doc">
+		</div>
+	
+		<div>
+			<h2>Last Known Permanent Address...</h2>
+			Street: <input type="text" name="street"><br>
+			Street Name: <input type="text" name="street_name"><br>
+			Street Type: <input type="text" name="street_type"><br>
+			City: <input type="text" name="city"><br>
+			County: <input type="text" name="county"><br>
+			State: <input type="text" name="state"><br>
+			Zip: <input type="text" name="zip"><br>
+		</div>
+	</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <h3>What was it like growing up?</h3>
+	<p>My childhood was good. My family did provide the basics. I do remember being a kid and imagining more for my life. I did not aspire for this. No one wants to be homeless. I hope that people read this and understand… no one sets out to be on the street. Its just that life happens, and it can happen to anyone. Growing up I was told not to judge anyone, so I hope people don’t judge me.</p>
+  </div>
+
+
+ <!-- <div id="myModal2" class="modal"> -->
+ <!-- Modal content -->
+ <!-- <div class="modal-content">
+   	<span class="close">×</span>
+   	<h3>What is your biggest struggle being homeless?</h3>
+	<p>I would say it is the bridges that I’ve burned with my family and friends. My addiction has created so many problems between me and my family. I don’t even know where to start to make amends. Every time that I think I’ve got this thing beat, I let them down. It hurts because I miss my family but I understand why they stay away.</p>
+ </div> -->
+
+<script>
+function firstModal() {
+var modal1 = document.getElementById('myModal1');
+// Get the button that opens the modal
+// When the user clicks the button, open the modal 
+var btn = document.getElementsByTagName("input")[0];
+btn.onclick = function() {
+    modal1.style.display = "block";
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+// When the user clicks anywhere outside of the modal, close it
+span.onclick = function() {
+    modal1.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+}
+firstModal();
+
+
+</script>
+</body>
+</html> 
