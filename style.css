@@ -1,6 +1,8 @@
 body {
 font-size: 1.4em;
 background-image: url('interface.jpg');
+background-size: 50px 50px
+display: block;
 }
 
 input:focus {
@@ -19,7 +21,7 @@ list-style-type: none;
 }
 
 #middleCol {
-width: 35%;
+width: 350px;
 float: left;
 background-color: white;
 
@@ -34,7 +36,7 @@ margin: 5px;
 }
 
 #lastCol {
-width: 35%;
+width: 350px;
 float: left;
 background-color: white;
 }
