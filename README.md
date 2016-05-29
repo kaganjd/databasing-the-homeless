@@ -1,5 +1,5 @@
 # Databasing the Homeless
-[This](http://kaganjd.github.io/databasing-the-homeless/) is a sketch of what could be a larger project about data and databases, knowledge production, and the electronic turn in social services. It's inspired by Craig Willse's 2016 book, "The Value of Homelessness: Managing Surplus Life in the United States"—specifically, the "Governing through Numbers" chapter.
+This is a sketch of what could be a larger project about data and databases, knowledge production, and the electronic turn in social services. It's inspired by Craig Willse's 2016 book, "The Value of Homelessness: Managing Surplus Life in the United States"—specifically, the "Governing through Numbers" chapter.
 
 At this point, there is only one modal. When you click the "First Name" input, you see part of an interview from the Signs for the Homeless project (link below). I'd like to create modals for every input box.
 
