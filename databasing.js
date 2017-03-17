@@ -44,33 +44,53 @@ function createModal() {
 }
 
 function openModal() {
-  var inputs = document.getElementsByTagName("input");
+  // get all the <input> tags
+  var inputs = document.getElementsByTagName("input")
+  // create an array to store buttons
   var btn = [];
-  picker = Math.floor(Math.random() * modals.length);
+  // log the picker value
   console.log(picker);
   for (var i = 0; i < inputs.length; i++) {
     btn = inputs[i]
+    // when user clicks the button
     btn.onclick = function() {
+      // prevent default behavior of checkboxes
+      preventDef(event);
+      // create a picker value to choose which modal text is displayed
+      picker = Math.floor(Math.random() * modals.length);
+      // display the modal indexed by the picker value
       document.getElementById(modals[picker]).style.display = "block";
     }
   }
 }
 
+function preventDef(event) {
+  event.preventDefault();
+}
+
 function closeModal() {
+  // get the "close" span indexed by the picker value
   var span = document.getElementsByClassName("close")[picker];
-  // if the user clicks the 'x', close it
+  // if the user clicks the "x", close it
   span.onclick = function() {
     console.log("picker: ", picker)
     console.log("modals[picker]: ", modals[picker])
+    // change style to "display: none"
     document.getElementById(modals[picker]).style.display = "none";
+    resetPicker()
   }
-  // if the user clicks inside the modal, close it
+  // if the user clicks on the window outside the modal
   window.onclick = function(event) {
     if (event.target == document.getElementById(modals[picker])) {
+      // change style to "display: none"
       document.getElementById(modals[picker]).style.display = "none";
+      resetPicker()
     }
   }
-  // TODO: how do i reset the picker value?
+}
+
+function resetPicker() {
+  picker = null;
 }
 
 window.setTimeout(closeModal, 3000);
