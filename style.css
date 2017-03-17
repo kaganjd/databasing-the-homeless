@@ -1,52 +1,70 @@
 body {
-font-size: 1.4em;
-background-image: url('interface.jpg');
-background-size: 50px 50px
-display: block;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    background-image: url('assets/interface.jpg');
+    display: block;
+    line-height: 1em;
 }
 
-input:focus {
-color: black;
+h2 {
+    line-height: 1.2em;
+}
+
+input[type="text"]{
+    width: 150px;
+}
+
+input[type=checkbox] {
+    vertical-align: top;
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+div {
+    margin: 5px;
 }
 
 #sidebar {
-width: 220px;
-height: 100%;
-float: left;
-background-color: white;
+    width: 220px;
+    height: 100%;
+    line-height: 36px;
+    float: left;
+    background-color: rgba(255, 255, 255, .95);
 }
 
 #sidebar li {
-list-style-type: none;
+    list-style-type: none;
 }
 
 #middleCol {
-width: 350px;
-float: left;
-background-color: white;
+    width: 350px;
+    float: left;
+    background-color: rgba(255, 255, 255, .9);
 
 }
 
 #middleCol div {
-display: block;
-border-style: solid;
-border-color: black;
-padding: 5px;
-margin: 5px;
+    display: block;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
 }
 
 #lastCol {
-width: 350px;
-float: left;
-background-color: white;
+    width: 350px;
+    float: left;
+    background-color: rgba(255, 255, 255, .9);
 }
 
 #lastCol div {
-display: block;
-border-style: solid;
-border-color: black;
-padding: 5px;
-margin: 5px;
+    display: block;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
 }
 
 /* The Modal (background) */
