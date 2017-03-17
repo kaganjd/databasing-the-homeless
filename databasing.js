@@ -8,7 +8,8 @@ function init() {
   //  "color": "brown"},
   //  {"animal": "chick",
   //  "color": "yellow"}]
-Tabletop.init( { key: '1asZC5tWkBpMZ47S05VxJj0fh3gyMjaKYpK1sDNE2iCA',
+  // alt key: '1asZC5tWkBpMZ47S05VxJj0fh3gyMjaKYpK1sDNE2iCA'
+Tabletop.init( { key: '1Obseltf_Ef0peTYXzzVkZPAgs8pcE34277QnsGAfkaM',
                    callback: gotData,
                    simpleSheet: true } )
 }
@@ -69,12 +70,14 @@ function preventDef(event) {
 }
 
 function closeModal() {
+  // if there's no picker value yet, set one
+  if (picker === undefined) {
+    picker = Math.floor(Math.random() * modals.length);
+  }
   // get the "close" span indexed by the picker value
   var span = document.getElementsByClassName("close")[picker];
-  // if the user clicks the "x", close it
+  // when the user clicks the "close span",
   span.onclick = function() {
-    console.log("picker: ", picker)
-    console.log("modals[picker]: ", modals[picker])
     // change style to "display: none"
     document.getElementById(modals[picker]).style.display = "none";
     resetPicker()
